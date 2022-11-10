@@ -1,0 +1,176 @@
+.grid-registro {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: calc(100vh - 75px);
+  grid-template-areas: "grid-registro-imagen grid-registro-formulario";
+}
+
+.grid-registro-imagen {
+  grid-area: grid-registro-imagen;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-registro-formulario {
+  grid-area: grid-registro-formulario;
+  padding: 50px;
+}
+
+.grid-registro-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenedor-registro-imagen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+}
+
+.contenedor-registro-imagen p,
+.contenedor-registro-imagen h3,
+.contenedor-registro-imagen h2 {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px black;
+}
+
+.grid-registro-formulario h2 {
+  font-size: 34px;
+  color:black;
+}
+
+.grid-registro-formulario p {
+  font-size: 20px;
+}
+
+.grid-registro-formulario button{
+  border-radius: 50px;
+  padding: 19px;
+  width: 208px;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  border:none;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.grid-registro-formulario .grid-registro-facebook{
+  background-color:black;
+  color: white;
+}
+
+.grid-registro-formulario .grid-registro-google{
+  background-color: white;
+  color: black;
+  margin-left: 25px;
+}
+
+.grid-registro-formulario form{
+  margin-top: 20px;
+}
+
+.grid-registro-formulario  input[type="text"], .grid-registro-formulario  input[type="password"] {
+  margin-top: 10px;
+  display: block;
+  font-family: inherit;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 20px;
+  padding-left: 20px;
+  width: 100%;
+  border: solid 1px #e4e4e4;
+}
+.grid-registro-formulario  input[type="text"]:focus, .grid-registro-formulario  input[type="password"]:focus {
+  outline: none;
+}
+
+.grid-registro-formulario form p{
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 17px;
+}
+
+.grid-registro-formulario form p input[type="checkbox"]{
+  margin-right: 5px;
+}
+
+.grid-registro-formulario form input[type="submit"]{
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  margin-top: 10px;
+  display: block;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 20px;
+  padding-left: 20px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-registro-formulario form input[type="submit"]:hover {
+  background: red;
+}
+
+.grid-registro-formulario form input[type="submit"]:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.grid-registro-formulario form input[type="submit"]:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-registro {
+    
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .grid-registro {
+    
+    grid-template-columns: 40% 60%;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  .grid-registro {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "grid-registro-formulario"
+    "grid-registro-imagen";
+  }
+
+  .grid-registro-formulario button {
+    width: 100%; 
+  }
+
+  .grid-registro-formulario .grid-registro-google{
+    margin-left: 0px;
+  }
+  
+}

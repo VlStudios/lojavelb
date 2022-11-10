@@ -1,0 +1,31 @@
+.contenedor-layout-administracion {
+  margin-left: 204px;
+  padding: 10px 14px;
+}
+
+.contenedor-layout-cliente {
+  margin-left: 300px;
+  padding: 10px 14px;
+}
+.section-cliente {
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contenedor-layout-cliente {
+    margin-left: 204px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contenedor-layout-cliente {
+    margin-left: 0px;
+    padding: 10px 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contenedor-layout-administracion {
+    margin-left: 0px;
+    margin-top: 75px;
+  }
+}

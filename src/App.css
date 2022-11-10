@@ -1,0 +1,215 @@
+/*NAVEGACION CABECERA*/
+.navegacion-cabecera {
+  position: relative;
+  top: 75px;
+  background-color: #f2f2f2;
+  height: 32px;
+  display: flex;
+  
+}
+
+.navegacion-cabecera a {
+  color: #666;
+  font-weight: 400;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.navegacion-cabecera a:hover {
+  color: red;
+}
+/*FIN NAVEGACION CABECERA*/
+
+/*HISTORIAL DE NAVEGACION*/
+.historial-navegacion {
+  position: relative;
+  top: 75px;
+  background-color: transparent;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  height: 36px;
+  overflow: hidden;
+  padding: 8px 0;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.historial-navegacion a {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0px 8px;
+}
+
+.historial-navegacion span {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #818a91;
+}
+
+.historial-navegacion a:hover {
+  color: red;
+}
+/* FIN HISTORIAL DE NAVEGACION*/
+/* TITULO DE PAGINAS*/
+.titulo-paginas h1 {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+}
+/* FIN TITULO DE PAGINAS*/
+/* BOTON FORMULARIOS*/
+.boton-formulario {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 32px;
+  padding: 0.21rem 0.5rem;
+  width: 100%;
+}
+
+.boton-formulario:hover {
+  background: black;
+}
+
+.boton-formulario:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.boton-formulario:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.boton-formulario:focus {
+  background-color: black;
+}
+
+
+/* FIN BOTON FORMULARIOS*/
+
+
+/* BOTON MEDIANO*/
+.boton-mediano {
+  position: relative;
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 32px;
+  padding: 0.21rem 0.5rem;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.boton-mediano:hover {
+  background: black;
+}
+
+.boton-mediano:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.boton-mediano:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.boton-mediano:focus {
+  background-color: black;
+}
+/* FIN BOTON MEDIANO*/
+
+/* INICIO CHECKED MEDIANO MEDIANO*/
+.contenedor-check-mediano {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.contenedor-check-mediano input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark-mediano {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border: 1px solid black;}
+
+.contenedor-check-mediano:hover input ~ .checkmark-mediano {
+  background-color: white;
+}
+
+.contenedor-check-mediano input:checked ~ .checkmark-mediano {
+  background-color: red;
+}
+
+.checkmark-mediano:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.contenedor-check-mediano input:checked ~ .checkmark-mediano:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+/* FIN CHECKED MEDIANO MEDIANO*/
